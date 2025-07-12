@@ -12,8 +12,11 @@ print(f"VOWELS Dict Type: {type(VOWEL_DICT)}")
 print(f"VOWELS List: {VOWELS}")
 print(f"VOWELS Dict: {VOWEL_DICT}")
 
+try: 
 # Ask the user to enter a single character
-user_input = input("Enter a single character (A-Z): ")
+    user_input = input("Enter a single character (A-Z): ")
+except Exception as e:
+    print("You Entered some wrong user input. Error: {e}")
 
 # If the input length is not exactly 1, use DEFAULT_CHAR, else take first character and capitalize it
 if len(user_input) != 1:
