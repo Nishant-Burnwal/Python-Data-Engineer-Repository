@@ -19,8 +19,8 @@ try:
     print(f"{user_name} and places to visit are:", first_place, second_place, third_place, sep=" , ", end="\n")
     print(f"In the year {year}")
 
-except ValueError:
-    print("You entered an incorrect value for the year. It must be an integer.")
+except ValueError as err:
+    print("You entered an incorrect value for the year. It must be an integer. Error: {err}")
 
 except Exception as e:
     print(f"An unexpected error occurred: {e}")
