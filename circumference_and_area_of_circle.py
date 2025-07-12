@@ -18,4 +18,4 @@ volume_cube_cm = PI * (radius_cm ** 3)
 # Print the radius with new line separator
 print(f"\nCircumference of the Circle is {round(circumference_cm, 2)} cm and",
       f"Area of the Circle is {round(area_square_cm, 2)} sqcm",
-      f"Volume of the Circle is {round(volume_cube_cm, 2)} sqcm", sep="\n")
+      f"Volume of the Sphere is {round(volume_cube_cm, 2)} sqcm", sep="\n")
